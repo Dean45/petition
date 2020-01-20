@@ -1,0 +1,28 @@
+<div class="content">
+  <div><h4>In order to sigh the petition, please register first:</a></h4></div>
+
+<div>
+<form method="POST">
+  <div>
+    <label for="first">First name: </label>
+    <input name="first" autocomplete="off">
+    <label for="last">Last name: </label>
+    <input name="last" autocomplete="off">
+    <label for="email">E-mail: </label>
+    <input name="email" type="email" autocomplete="off">
+    <label for="password">Password: </label>
+    <input type="password" name="password">
+    <input type="hidden" name="_hidden" value="{{csrfToken}}">
+    </div>
+    {{#if error}}
+    <div class="error">Looks like something went wrong, please try again</div>
+    {{/if}}
+
+    <div><button class="button">Submit</button></div>
+</form>
+</div>
+
+    <div>
+    If you are already registered, please <a href="/login">log in here</a>
+    </div>
+</div>

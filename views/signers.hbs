@@ -1,0 +1,41 @@
+<div class="content">
+  <div>
+{{#if selectedCity}}
+<h4>And these are the ones from {{city}}</h4>
+
+{{else}}
+
+<h4>Following amazing people supported our cause so far:</h4>
+{{/if}}
+</div>
+
+<div class="table">
+
+        {{#signersdb}}
+        {{#if home}}
+        <p> {{id}}. |
+            <a href="{{home}}" target="_blank">{{first}} {{last}}</a>
+            {{#if age}} | {{age}} {{/if}}
+            {{#if city}} | <a href="/signed-by/{{city}}"> {{city}}</a> {{/if}}
+        </p>
+        {{else}}
+        <p> {{id}}. |
+            {{first}} {{last}}
+            {{#if age}} | {{age}} {{/if}}
+            {{#if city}} | <a href="/signed-by/{{city}}"> {{city}} </a>{{/if}}
+        </p>
+        {{/if}}
+        {{/signersdb}}
+
+</div>
+
+{{#if selectedCity}}
+<div>
+<a href="/signers">Back to all signers</a>
+</div>
+{{/if}}
+
+<div>
+<a href="/thanks">Back to my signature</a>
+</div>
+</div>

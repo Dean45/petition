@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: black;
+    color: white;
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+}
+
+article {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+main {
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+div {
+  margin-top: 1%;
+}
+
+.intro {
+  font-size: 0.9em;
+}
+
+.error {
+  color: darkred;
+}
+
+.content {
+  margin-top: 100px;
+}
+
+canvas {
+  margin-top: 10px;
+  background: black;
+  border: 1px solid white;
+  color: #64994b;
+  /* cursor: crosshair; */
+}
+
+img {
+    margin: 5px;
+
+}
+
+a {
+    color: #64994b;
+    text-decoration: none;
+
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+.yes {
+  font-size: 1.2em;
+
+}
+
+
+
+
+
+.profile {
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+
+
+.button {
+    font-family: 'Lexend Exa', sans-serif;
+    font-size: 1em;
+    background: none;
+    border: none;
+    padding: 0;
+    color: #64994b;
+    cursor: pointer;
+  }
+
+  .button:hover {
+      text-decoration: underline;
+  }
+
+#sig {
+  border: 1px solid white;
+}
+
+  footer {
+      width: 100%;
+      /* position: absolute;
+      bottom: 0; */
+      /* justify-self: end; */
+      padding: 8px;
+      font-size: 12px;
+      background: #303030;
+      color: #606060;
+    flex-shrink: 0;
+    margin: 0px;
+  }

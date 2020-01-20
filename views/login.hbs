@@ -1,0 +1,21 @@
+<div class="content">
+<h4>Please log in:</h4>
+<div>
+  <form method="POST">
+  <label for="email">E-mail: </label>
+  <input name="email" type="email" autocomplete="off">
+  <label for="password">Password: </label>
+  <input type="password" name="password">
+  <input type="hidden" name="_csrf" value="{{csrfToken}}">
+  <button>Log in</button>
+
+{{#if error}}
+<div class="error">Looks like something went wrong, please try again</div>
+{{/if}}
+
+</form>
+</div>
+<div>
+Or <a href="/registration">register</a> if you haven't already
+</div>
+</div>

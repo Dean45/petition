@@ -1,0 +1,21 @@
+<div class="content">
+<h4>Tell us a bit about yourself if you feel like:</h3>
+
+<form method="POST">
+  <div>
+    <label for="age">Age: </label>
+    <input name="age" autocomplete="off">
+    <label for="city">City: </label>
+    <input name="city" autocomplete="off">
+    <label for="home">Homepage: </label>
+    <input name="home" autocomplete="off">
+    <input type="hidden" name="_hidden" value="{{csrfToken}}">
+  </div>
+    {{#if error}}
+    <div class="error">Looks like something went wrong, please try again</div>
+    {{/if}}
+  <div>
+    <button class="button">Continue</button>
+  </div>
+</form>
+</div>
