@@ -15,7 +15,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 
 app.use(cookieSession({
-    //I think we need to keep this safe...maybe not
     secret: `Welcome to the wooorld of tomorrowww!`,
     maxAge: 1000 * 60 * 60 * 24 * 13365
 }));
@@ -42,7 +41,6 @@ app.post("/registration", (req, res) => {
                 email: req.body.email,
                 password: hash
             };
-            //.then(id => { req.session.uid = id.rows[0].id;
             db.addUser(req.session.user)
                 .then(
                     res.redirect("/login")
