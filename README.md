@@ -15,12 +15,12 @@ https://make-world-great.herokuapp.com/
 ## Features
 
 - user registration
-- signature canvas, can be redone
-- simple editable profile
-- visualized database of other users that signed the petition and their info
+- signature canvas, with delete and redo option
+- simple profile, that can be edited
+- visualized database of other users that signed the petition and their public info
 - city based filter
 - 3 level cookie permission system
-- log in and log out
+- CSURF, log in and log out
 
 ## Tech
 
