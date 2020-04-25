@@ -14,6 +14,7 @@ app.set("view engine", "hbs");
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("./public"));
 
+//Would be in a differnt file if it was not a demo project
 app.use(cookieSession({
     secret: `Welcome to the wooorld of tomorrowww!`,
     maxAge: 1000 * 60 * 60 * 24 * 13365
